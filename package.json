@@ -1,0 +1,11 @@
+{
+  "name": "proyecto_portafolio",
+  "version": "1.0.0",
+  "description": "Página web desarrollada pensando en Mobile First. Ejercicio desarrollado junto a las clases de Responsive design de Platzi (Febrero 2016) ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Barís Klobertanz (klobertanz@gmail.com)",
+  "license": "BSD-2-Clause"
+}
