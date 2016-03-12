@@ -1,18 +1,15 @@
-(function () {
+(function(){
 
-  //var loadCSS=require('./lib/loadCSS.js');
-  document.addEventListener('DOMContentLoader',onDOMLoad);/*se ejecutarán
+  var loadCSS = require('./lib/loadCSS.js');
+  
+  document.addEventListener('DOMContentLoaded',onDOMLoad);/*se ejecutarán
   todas las funciones, una vez que el DOM haya cargado.*/
+  var header= document.getElementById('header');
+  var navbarMenu = document.getElementById('navbarMenu');
+  var btnMenu = document.getElementById('btnMenu');
+  var alturaY=636;
 
   function onDOMLoad(){
-
-
-    var header= document.getElementById('header');
-    var navbarMenu = document.getElementById('navbarMenu');
-    var btnMenu = document.getElementById('btnMenu');
-    var alturaY=636;
-
-    //window.addEventListener('scroll',onScrollLight);
 
     btnMenu.addEventListener('click', onClickMenu);
 
@@ -21,13 +18,6 @@
 
     function onClickMenu() {
       navbarMenu.classList.toggle('header-menu-list--show');
-    }
-
-    function loadCSS(url){
-      var elem=document.createElement('link');
-      elem.rel='stylesheet';
-      elem.href=url;
-      document.head.appendChild(elem);
     }
 
     function onScrollLight(){
@@ -43,7 +33,5 @@
 
       }
   }
-
-
-
-}());
+}
+})();
