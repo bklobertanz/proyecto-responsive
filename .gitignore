@@ -1,1 +1,4 @@
 *.txt
+*.txt.*
+node_modules
+*.zip 

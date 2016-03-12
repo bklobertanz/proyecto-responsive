@@ -1,0 +1,95 @@
+@import "./normalize.css"
+@import "./reset.styl"
+@import "./video.styl"
+@import "./content.styl"
+
+$black=#212121
+$white=#FAFAFA
+
+body
+		font-family 'Lato'
+		font-size 16px
+
+
+.header
+
+	font-family 'Montserrat'
+	background-color $black
+	height 64px
+	line-height 64px
+	color $white
+	position fixed
+	top 0
+	left 0
+	width 100%
+	z-index 10
+
+	&--light
+
+		background-color $white
+		color $black
+
+	&-mobile
+		display flex
+		justify-content space-between
+
+	&-logo
+		margin-left 1rem
+
+	&-btn-nav
+		background-color $black
+		border-radius 5px
+		border 0
+		margin-right 1rem
+
+		&--light
+			background-color $white
+			color $black
+
+	&-menu
+
+		&-navbar
+			background-color $black
+
+		&-list
+			list-style-type none
+			margin-left 1rem
+			height 0
+			overflow hidden
+			transition height .3s ease
+
+			&--show
+				height 280px
+
+			a
+				text-decoration none
+				color $white
+				width 100%
+				display block
+
+@media (min-width:768px)
+
+		.header
+			display flex
+			flow-direction row
+			flow-wrap wrap
+			justify-content space-between
+			height 80px
+			line-height 80px
+			transition all .3s ease
+
+			&-logo
+				margin-left 1.5 rem
+
+			&-menu-list
+				height 80px
+				margin-right .5rem
+
+				&-item
+					display inline-block
+
+					a
+						padding 0 1rem
+
+			&-btn-nav
+				display none

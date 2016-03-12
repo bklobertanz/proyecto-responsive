@@ -1,0 +1,56 @@
+
+.content
+  padding 64px 0 0 0
+
+  &-container
+    p
+      padding 1em
+    &-picture
+      img
+        width 100vw
+
+  &-features
+    padding 0
+
+  &-block
+    padding 1em
+    border-left 6px solid #dedede
+    border-bottom 1px solid #dedede
+    &-title
+      font-family 'Montserrat'
+
+    &:hover
+      background-color #dedede
+
+    &:nth-child(1)
+      border-left-color peru
+
+    &:nth-child(2)
+      border-left-color maroon
+
+    &:nth-child(3)
+      border-left-color blue
+
+    &:nth-child(4)
+      border-left-color green
+@media (min-width:768px)
+  .content
+    margin 0 auto //centrar contenido
+    width 768px
+
+    &-features
+      display flex
+    &-container
+      display flex
+      flex-direction row
+      padding 1em 0
+      p
+       padding 0
+       width 70%
+       order 2
+      &-picture
+        width 30%
+        order 1
+        margin-right 1em
+        img
+          width 100%
