@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Página</title>
+  <style>/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */img,legend{border:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre,textarea{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{padding:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}article,aside,button,div,h1,h2,h3,h4,h5,h6,header,li,nav,ol,p,picture,section,ul{margin:0;padding:0}.video-container{padding:25%;height:0;position:relative}.video-container embed,.video-container iframe,.video-container object,.video-container video{position:absolute;top:0;left:0;width:100%;height:100%}.content{padding:64px 0 0}.content-container p{padding:.5em 0}.content-container-picture img{width:100vw}.content-features{padding:0}.content-block{padding:1em;border-left:6px solid #dedede;border-bottom:1px solid #dedede}.content-block-title{font-family:Montserrat}.content-block:hover{background-color:#dedede}.content-block:nth-child(1){border-left-color:peru}.content-block:nth-child(2){border-left-color:maroon}.content-block:nth-child(3){border-left-color:#00f}.content-block:nth-child(4){border-left-color:green}@media (min-width:768px){.content{margin:0 auto;width:768px}.content-features{display:flex;justify-content:space-between}.content-container{display:flex;flex-direction:row;padding:1em 0}.content-container p{padding:0;width:70%;order:2}.content-container-picture{width:30%;order:1;margin-right:1em}.content-container-picture img{width:100%}}body{font-family:Lato;font-size:16px}.header{font-family:Montserrat;background-color:#212121;height:64px;line-height:64px;color:#fafafa;position:fixed;top:0;left:0;width:100%;z-index:10}.header--light{background-color:#fafafa;color:#212121}.header-mobile{display:flex;justify-content:space-between}.header-logo{margin-left:1rem}.header-btn-nav{background-color:#212121;border-radius:5px;border:0;margin-right:1rem}.header-btn-nav--light{background-color:#fafafa;color:#212121}.header-menu-navbar{background-color:#212121}.header-menu-list{list-style-type:none;margin-left:1rem;height:0;overflow:hidden;transition:height .3s ease}.header-menu-list--show{height:280px}.header-menu-list a{text-decoration:none;color:#fafafa;width:100%;display:block}@media (min-width:768px){.header{display:flex;flow-direction:row;flow-wrap:wrap;justify-content:space-between;height:80px;line-height:80px;transition:all .3s ease}.header-logo{margin-left:1.5rem}.header-menu-list{height:80px;margin-right:.5rem}.header-menu-list-item{display:inline-block}.header-menu-list-item a{padding:0 1rem}.header-btn-nav{display:none}}</style>
+</head>
+<body>
+
+  <header id="header" class="header" >
+    <div class="header-mobile">
+      <h1 class="header-logo">Logo</h1>
+      <button id="btnMenu" class="header-btn-nav">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+    <nav class="header-menu-navbar">
+      <ul id="navbarMenu" class="header-menu-list">
+        <li class="header-menu-list-item">
+          <a href="#">Inicio</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="#">Acerca de</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+<article class="content">
+	<section class="content-text">
+		<div class="video-container">
+			<iframe
+				width="560"
+				height="315"
+				src="https://www.youtube.com/embed/cFLNve2K-J4"
+				frameborder="0"
+				allowfullscreen>
+			</iframe>
+		</div>
+	</section>
+
+	<section class="content-features">
+		<div class="content-block">
+			<h3 class="content-block-title">Feature 1</h3>
+			<p>
+				Lorem ipsum
+			</p>
+		</div>
+
+		<div class="content-block">
+			<h3 class="content-block-title">Feature 2</h3>
+			<p>
+				Lorem ipsum
+			</p>
+		</div>
+
+		<div class="content-block">
+			<h3 class="content-block-title">Feature 3</h3>
+			<p>
+				Lorem ipsum
+			</p>
+		</div>
+
+		<div class="content-block">
+			<h3 class="content-block-title">Feature 4</h3>
+			<p>
+				Lorem ipsum
+			</p>
+		</div>
+
+	</section>
+
+  <section class="content-images">
+
+    <div class="content-container">
+          <picture class="content-container-picture">
+              <source media="(min-width:768px)" srcset="img/img01-mobile-retina.jpg 2x">
+              <source media="(min-width:320px)" srcset="img/img01-mobile.jpg">
+              <img src="img/img01-mobile.jpg"/>
+          </picture>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates expedita voluptatibus suscipit quis commodi debitis blanditiis magnam, perferendis saepe, mollitia perspiciatis odio pariatur exercitationem, tempore nemo neque voluptatum libero sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates expedita voluptatibus suscipit quis commodi debitis blanditiis magnam, perferendis saepe, mollitia perspiciatis odio pariatur exercitationem, tempore nemo neque voluptatum libero sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates expedita voluptatibus suscipit quis commodi debitis blanditiis magnam.
+          </p>
+      </div>
+    </section>
+  </article>
+  <script>!function e(t,n,o){function r(i,s){if(!n[i]){if(!t[i]){var u="function"==typeof require&&require;if(!s&&u)return u(i,!0);if(a)return a(i,!0);var c=new Error("Cannot find module '"+i+"'");throw c.code="MODULE_NOT_FOUND",c}var d=n[i]={exports:{}};t[i][0].call(d.exports,function(e){var n=t[i][1][e];return r(n?n:e)},d,d.exports,e,t,n,o)}return n[i].exports}for(var a="function"==typeof require&&require,i=0;i<o.length;i++)r(o[i]);return r}({1:[function(e,t,n){var o=function(e){var t=document.createElement("link");t.rel="stylesheet",t.href=e,document.head.appendChild(t)};t.exports=o},{}],2:[function(e,t,n){!function(){function t(){function e(){o.classList.toggle("header-menu-list--show")}r.addEventListener("click",e),n("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"),n("https://fonts.googleapis.com/css?family=Montserrat|Lato")}var n=e("./lib/loadCSS.js");document.addEventListener("DOMContentLoaded",t);var o=(document.getElementById("header"),document.getElementById("navbarMenu")),r=document.getElementById("btnMenu")}()},{"./lib/loadCSS.js":1}]},{},[2]);</script>
+</body>
+</html>
